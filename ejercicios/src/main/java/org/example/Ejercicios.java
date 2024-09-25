@@ -14,14 +14,21 @@ public class Ejercicios {
 
         System.out.println("Hola " + nombre + " bienvenido a " + curso);
 
-        System.out.println("Introduce un número 1");
-        int num1 = entrada.nextInt();
+        int num1 = 0;
+        int num2 = 0;
 
-        System.out.println("Introduce un número 2");
-        int num2 = entrada.nextInt();
+        while (num1==num2){
+            System.out.println("Introduce un número 1");
+            num1 = entrada.nextInt();
 
+            System.out.println("Introduce un número 2");
+            num2 = entrada.nextInt();
 
-        int resultado = num1 + num2;
-        System.out.println("El resultado de la suma es " + resultado);
+            if (num1==num2){
+            System.out.println("ERROR LOS NUMERO SON IGUALES");
+            }
+        }
+            int resultado = num1 + num2;
+            System.out.println("El resultado de la suma es " + resultado);
     }
 }
