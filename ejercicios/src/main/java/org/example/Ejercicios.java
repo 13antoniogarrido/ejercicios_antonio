@@ -1,12 +1,13 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicios {
 
     public void actividad_inicial(){
-        System.out.println("¿Cómo te llamas?");
         Scanner entrada = new Scanner(System.in);
+        System.out.println("¿Cómo te llamas?");
         String nombre = entrada.next();
 
         System.out.println("¿A que curso vas?");
@@ -31,4 +32,72 @@ public class Ejercicios {
             int resultado = num1 + num2;
             System.out.println("El resultado de la suma es " + resultado);
     }
+
+    public void excepciones(){
+        Scanner entrada = new Scanner(System.in);
+
+        int numero;
+
+        boolean error=true;
+
+        while (error==true){
+
+            try {
+                System.out.println("introduce un numero...");
+                numero = entrada.nextInt();
+                error=false;
+            }catch (InputMismatchException er){
+                System.out.println("error, introduce un valor");
+                entrada.nextLine();
+            }
+        }
+    }
+
+    public void ejercicio3(){
+        Scanner entrada = new Scanner(System.in);
+        float num1 = 0;
+        float num2 = 0;
+        float resultado = 0;
+        int aux = 0;
+
+        while (aux==0) {
+                try {
+                    System.out.println("introduce el dividendo...");
+                    num1 = entrada.nextInt();
+                    System.out.println("introduce el divisor...");
+                    num2 = entrada.nextInt();
+                    aux = 1;
+                } catch (InputMismatchException er) {
+                    System.out.println("error. introduce un valor valido...");
+                    entrada.nextLine();
+                }
+        }
+        if (num2==0){
+            System.out.println("el divisor no puede ser 0.");
+        }else {
+            resultado = (num1/num2);
+            System.out.println("el ersultado es " + resultado);
+        }
+    }
+
+    public void ejercicio4(){
+        Scanner entrada = new Scanner(System.in);
+        
+
+
+
+    }
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
