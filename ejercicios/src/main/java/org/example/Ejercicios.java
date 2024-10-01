@@ -82,21 +82,46 @@ public class Ejercicios {
 
     public void ejercicio4(){
         Scanner entrada = new Scanner(System.in);
-        
+
 
 
 
     }
 
+    public void practica3(){
+        Scanner entrada = new Scanner(System.in);
 
+        System.out.println("¿Como te llamas?");
+        String nombre = entrada.next();
 
+        int edad=0;
 
+        boolean error=true;
 
+        while (error==true){
 
+            try {
+                System.out.println("Hola " + nombre + " ¿Que edad tienes?");
+                edad = entrada.nextInt();
+                error=false;
+            }catch (InputMismatchException er){
+                System.out.println("error, introduce la edad en número");
+                entrada.nextLine();
+            }
+        }
 
+            if (edad>=18)
+            {System.out.println(nombre + ", puedes votar");
+            }
+                else {
+                    System.out.println(nombre + ", No puedes votar");
+                    int nopuedevotar = 18 - edad;
+                    System.out.println("Te faltan " + nopuedevotar + " años.");
+                }
+        }
 
+    }
 
-}
 
 
 
