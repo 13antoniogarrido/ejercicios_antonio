@@ -95,15 +95,12 @@ public class Ejercicios {
         String nombre = entrada.next();
 
         int edad=0;
-
         boolean error=true;
-
         while (error==true){
-
             try {
-                System.out.println("Hola " + nombre + " ¿Que edad tienes?");
-                edad = entrada.nextInt();
-                error=false;
+                    System.out.println("Hola " + nombre + " ¿Que edad tienes?");
+                    edad = entrada.nextInt();
+                    error=false;
             }catch (InputMismatchException er){
                 System.out.println("error, introduce la edad en número");
                 entrada.nextLine();
@@ -120,7 +117,10 @@ public class Ejercicios {
                 }
         }
 
-    }
+        }
+
+
+
 
 
 

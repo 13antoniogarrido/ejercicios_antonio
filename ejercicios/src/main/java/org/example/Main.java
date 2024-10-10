@@ -5,8 +5,12 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Ejercicios ejercicio = new Ejercicios();
-        ejercicio.practica3();
+        //Ejercicios ejercicio = new Ejercicios();
+        //ejercicio.practica3();
+        tema2_ejercicios ejercicios = new tema2_ejercicios();
+        ejercicios.ejercicio1();
+        //CosasStrings cosas = new CosasStrings();
+        //cosas.caracteres();
     //Operadores operadores = new Operadores();
     //operadores.aritmeticos();
     //operadores.asignacion();
