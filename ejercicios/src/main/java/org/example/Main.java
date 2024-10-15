@@ -7,10 +7,11 @@ public class Main {
     public static void main(String[] args) {
         //Ejercicios ejercicio = new Ejercicios();
         //ejercicio.practica3();
-        tema2_ejercicios ejercicios = new tema2_ejercicios();
-        ejercicios.ejercicio1();
-        //CosasStrings cosas = new CosasStrings();
-        //cosas.caracteres();
+        //tema2_ejercicios ejercicios = new tema2_ejercicios();
+        //ejercicios.ejercicio3();
+        tema2_actividad actividad = new tema2_actividad();
+        actividad.actividad1();
+
     //Operadores operadores = new Operadores();
     //operadores.aritmeticos();
     //operadores.asignacion();
