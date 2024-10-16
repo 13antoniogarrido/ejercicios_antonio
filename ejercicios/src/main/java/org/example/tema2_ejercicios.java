@@ -51,4 +51,13 @@ public class tema2_ejercicios {
 
     }
 
+    public void ejerciciodeampliacion(){
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("¿Que altura tienes en cm?");
+        System altura = entrada.next();
+
+
+    }
+
 }

@@ -10,7 +10,7 @@ public class Main {
         //tema2_ejercicios ejercicios = new tema2_ejercicios();
         //ejercicios.ejercicio3();
         tema2_actividad actividad = new tema2_actividad();
-        actividad.actividadswitch_case();
+        actividad.ejerciciodeampliacion();
 
     //Operadores operadores = new Operadores();
     //operadores.aritmeticos();
