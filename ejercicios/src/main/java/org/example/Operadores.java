@@ -33,8 +33,7 @@ public class Operadores {
         System.out.println("Valor de c = " + c);
         // Esta siguiente declaración arrojaría una exception
         // porque el valor del operando derecho debe ser inicializado
-        // antes de la asignación, entonces el programa no
-        // compila.
+        // antes de la asignación, entonces el programa no compila.
         // c = d;
         // operadores de asignación simples
         a = a + 1;

@@ -54,7 +54,9 @@ public class Tema1_actividadinicial {
         int num1 = 0;
         int num2 = 0;
 
+
         while (num1==num2){
+
             System.out.println("Introduce un número...");
             num1 = entrada.nextInt();
 
@@ -64,11 +66,14 @@ public class Tema1_actividadinicial {
             if (num1==num2){
                 System.out.println("ERROR. Los números son iguales.");
             }
-
         }
-
         int resultado = num1 + num2;
         System.out.println("El resultado de la suma es " + resultado);
+
+
+    }
+
+    public void ejercicio3(){
 
 
     }
