@@ -9,8 +9,8 @@ public class Main {
         //ejercicio.practica3();
         //tema2_ejercicios ejercicios = new tema2_ejercicios();
         //ejercicios.ejercicio3();
-        tema2_actividad actividad = new tema2_actividad();
-        actividad.ejerciciodeampliacion();
+        Bucles bucles = new Bucles();
+        bucles.ejercicio1();
 
     //Operadores operadores = new Operadores();
     //operadores.aritmeticos();
