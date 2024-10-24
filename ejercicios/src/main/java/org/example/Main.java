@@ -3,8 +3,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Tema1_actividadinicial actividades = new Tema1_actividadinicial();
-        actividades.actividad_inicial();
+        Aleatorios aleatorios = new Aleatorios();
+        aleatorios.ejercicio3();
+        //Tema1_actividadinicial actividades = new Tema1_actividadinicial();
+        //actividades.actividad_inicial();
         //Ejercicios ejercicio = new Ejercicios();
         //ejercicio.practica3();
         //tema2_ejercicios ejercicios = new tema2_ejercicios();
