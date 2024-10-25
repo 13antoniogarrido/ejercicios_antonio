@@ -70,7 +70,7 @@ public class Aleatorios {
         int num = 0;
         int nums = 0;
         boolean error = true;
-        while (error = true){
+        while (error = true) {
             try {
                 while (min >= max) {
                     System.out.println("Dame un numero máximo");
@@ -80,12 +80,12 @@ public class Aleatorios {
                 }
                 System.out.println("Dime cuantos numeros quieres que te muestre");
                 nums = entrada.nextInt();
-                for (int i = 0; i < nums; i++){
+                for (int i = 0; i < nums; i++) {
                     num = aleatorio.nextInt(max - min + 1) + min;
                     System.out.println(num);
                 }
                 break;
-            }catch (InputMismatchException e1){
+            } catch (InputMismatchException e1) {
                 System.out.println("has introducido un caracter mal, introduce un numero inutil" + e1);
                 entrada.nextLine();
             }
