@@ -3,8 +3,10 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Aleatorios aleatorios = new Aleatorios();
-        aleatorios.ejercicio3();
+        Tema2_claseString string = new Tema2_claseString();
+        string.clases();
+        //Aleatorios aleatorios = new Aleatorios();
+        //aleatorios.ejercicio1();
         //Tema1_actividadinicial actividades = new Tema1_actividadinicial();
         //actividades.actividad_inicial();
         //Ejercicios ejercicio = new Ejercicios();
