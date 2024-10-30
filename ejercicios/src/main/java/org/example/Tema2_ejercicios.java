@@ -33,6 +33,7 @@ public class Tema2_ejercicios {
                 break;
             } catch (InputMismatchException e1) {
                 System.out.println("Error de caracater");
+                entrada.nextLine();
             }
         }
 
@@ -52,6 +53,17 @@ public class Tema2_ejercicios {
                     System.out.println("Introduceme un numero (exponente): ");
                     expo = entrada.nextInt();
                 }
+                if (expo==0){
+                   if (base > 0){
+                       res = 1;
+                       System.out.println("El resultado es: " + res);
+                       break;
+                   } else if (base < 0) {
+                       res = -1;
+                       System.out.println("El resultado es: " + res);
+                       break;
+                   }
+                }
                 for (int i = 1; i < expo; i++) {
                     int x = base;
                     res += base * x;
@@ -62,6 +74,36 @@ public class Tema2_ejercicios {
                 System.out.println("Error de caracater");
                 entrada.nextLine();
             }
+        }
+    }
+
+    public void repaso3() {
+
+        Scanner entrada = new Scanner(System.in);
+        int meses = 0 ;
+        int res = 0;
+        int mes = 10;
+        boolean error = true;
+        while (error = true) {
+            try {
+                System.out.println("dime cuantos meses vas a pagarlos ");
+                meses = entrada.nextInt();
+                for (int i = 1; i <= meses; i++){
+                    if (i == 1) {
+                        System.out.println("mes 1:" + mes);
+                    }else {
+                        res += mes;
+                        mes = mes * 2;
+                        System.out.println("mes " + i + ": " + mes);
+                    }
+                }res += mes;
+            System.out.println("total a pagar " + res + "€");
+                break;
+            }catch (InputMismatchException e1){
+                System.out.println("Error de caracter");
+                entrada.nextLine();
+            }
+
         }
     }
 
@@ -121,7 +163,7 @@ public class Tema2_ejercicios {
                     System.out.println("Dime tu sueldo");
                     sueldo = entrada.nextInt();
                     if (sueldo <= 0) {
-                        System.out.println("Subnormal ");
+                        System.out.println("mete el sueldo en positivo, no puede ser negativo ");
                         i--;
                         continue;
                     }
@@ -132,7 +174,6 @@ public class Tema2_ejercicios {
                         masmil++;
                     }
                 }
-
                 System.out.println("El sueldo mas alto es: " + mayor);
                 System.out.println("Hay mas de " + masmil + " personas ganando mas de 1000 euros");
                 break;
