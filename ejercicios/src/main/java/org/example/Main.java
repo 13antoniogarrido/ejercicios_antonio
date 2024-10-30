@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Tema2_ejercicios ejercicios=new Tema2_ejercicios();
-        ejercicios.repaso7();
+        ejercicios.examen();
         //Tema2 string = new Tema2();
         //string.excepciones();
         //Aleatorios aleatorios = new Aleatorios();
