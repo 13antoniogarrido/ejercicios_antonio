@@ -1,5 +1,7 @@
 package org.example;
 
+import javax.swing.*;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -62,6 +64,30 @@ public class Tema3 {
         }
         System.out.println("el número " + numeroteclado + " aparece " + contador + " veces");
     }
-}
+
+    public void ejercicio5(){
+
+        int num [] =  {1,2,3,4,5};
+        int ultimaposicion = num[num.length-1];//aqui guardamos el ultimo numero 5
+        for (int i=num.length-1;i>=0;i--){
+            if (i==0){
+                num[i] = ultimaposicion;
+            }else {
+                num[i] = num[i-1];
+            }
+        }
+        for (int i=0; i< num.length;i++)
+            System.out.println(" " + num[i] + " ");
+    }
+
+    public void vector(){
+        String palabras[] ={"aa", "bb", "cc"};
+        String textovector = Arrays.toString(palabras);
+        System.out.println(textovector);
+    }
+
+
+    }
+
 
 
