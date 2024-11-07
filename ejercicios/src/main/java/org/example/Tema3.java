@@ -65,6 +65,24 @@ public class Tema3 {
         System.out.println("el número " + numeroteclado + " aparece " + contador + " veces");
     }
 
+    public void ejercicio4(){
+        Scanner teclado = new Scanner(System.in);
+        int num [] =  {1,2,3,4,5};
+        int num2 [] = new int[num.length-1];
+        int posicionaborrar;
+        System.out.println("ingresa la posicion que quieres eliminar del 0-4");
+        posicionaborrar = teclado.nextInt();
+        for (int i = 0; i < num.length-1; i++) {
+            if (i < posicionaborrar){
+                num2[i] = num[i];
+            }else {
+                num2[i] = num[i+1];
+            }
+        }
+        System.out.println(Arrays.toString(num));
+        System.out.println(Arrays.toString(num2));
+    }
+
     public void ejercicio5(){
 
         int num [] =  {1,2,3,4,5};
