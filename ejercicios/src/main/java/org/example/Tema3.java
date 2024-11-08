@@ -98,6 +98,43 @@ public class Tema3 {
             System.out.println(" " + num[i] + " ");
     }
 
+    public void ejercicio6(){
+
+        Scanner teclado = new Scanner(System.in);
+        int numeros [] = new int[5];
+        System.out.println("introduce 5 números...");
+        for (int i=0; i<numeros.length;i++){
+            numeros[i] =  teclado.nextInt();
+        }
+        if (numeros[0]==numeros[4]&&numeros[1]==numeros[3]){
+            System.out.println("el array es simétrico");
+        } else {
+            System.out.println("el array NO es simétrico");
+        }
+
+
+    }
+
+    public void ejercicio7(){
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("introduce de que tamañano quieres la array...");
+        int tamanyo = teclado.nextInt();
+        System.out.println("introduce de que tamañano quieres la 2 array...");
+        int tamanyo2 = teclado.nextInt();
+        int numeros [] = new int[tamanyo];
+        int numeros2 [] = new int[tamanyo2];
+        System.out.println("introduce " + tamanyo +  " números...");
+        for (int i=0; i<numeros.length;i++){
+            numeros[i] =  teclado.nextInt();
+        }
+        System.out.println("introduce otros " + tamanyo2 +  " números...");
+        for (int i=0; i<numeros2.length;i++){
+            numeros2[i] =  teclado.nextInt();
+        }
+        System.out.println(numeros);
+
+    }
+
     public void vector(){
         String palabras[] ={"aa", "bb", "cc"};
         String textovector = Arrays.toString(palabras);
