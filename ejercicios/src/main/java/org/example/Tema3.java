@@ -217,9 +217,23 @@ public class Tema3 {
         }else {
             parsorteo = "impar";
         }
+        System.out.println("Ha tocado " + numerosorteo + " " + colorsorteo + " " + parsorteo);
+        if(numerosorteo==numero && colorsorteo.equals(color) && parsorteo.equals(par)){
+            System.out.println("Has ganado!!");
+        } else if (numerosorteo!=0 && colorsorteo.equals(color)) {
+            System.out.println("has acertado el color.");
+        } else if (numerosorteo!=0 && parsorteo.equals(par)) {
+            System.out.println("has acertado par/impar.");
+        } else if (numerosorteo==numero && numero!=0) {
+            System.out.println("has acertado el número");
+        } else if (numero==0 && numerosorteo==0) {
+            System.out.println("Has ganado y los demás han perdido");
+        }else {
+            System.out.println("has perdido");
+        }
+    }
     }
 
-    }
 
 
 
