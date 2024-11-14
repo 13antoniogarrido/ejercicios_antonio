@@ -1,6 +1,7 @@
 package org.example;
 
 import javax.swing.*;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -233,10 +234,33 @@ public class Tema3 {
         }
     }
 
-    public void burbujadescendente(){
+    public void ordenar(){
+
+        int numeros[] = {4,3,10,34,21};
+        Arrays.sort(numeros);
+        System.out.println(Arrays.toString(numeros));
+
+        int numero = 34;
+        int posicion = Arrays.binarySearch(numeros,numero);
+        System.out.println(posicion);
 
 
 
+    }
+
+    public void duplicados1(){
+
+        int original[] = {3,3,5,10,16,25,25};
+        int auxiliar[] = new int [original.length];
+        int limpio[];
+        for (int i=0; i < original.length; i++){
+            if (i!=original.length-1 && original[i]==original[i+1]){
+                System.out.println("duplicado: " + original[i]);
+            }else {
+                auxiliar[i] = original[i];
+            }
+        }
+            System.out.println(Arrays.toString(auxiliar));
     }
 
     }
