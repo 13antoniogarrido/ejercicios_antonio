@@ -1,6 +1,8 @@
 package org.example;
 
 import javax.swing.*;
+import javax.swing.plaf.synth.SynthSpinnerUI;
+import java.io.PrintStream;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
@@ -252,15 +254,52 @@ public class Tema3 {
 
         int original[] = {3,3,5,10,16,25,25};
         int auxiliar[] = new int [original.length];
-        int limpio[];
+        int tamanyo = 0;
         for (int i=0; i < original.length; i++){
             if (i!=original.length-1 && original[i]==original[i+1]){
                 System.out.println("duplicado: " + original[i]);
             }else {
                 auxiliar[i] = original[i];
+                tamanyo++;
             }
         }
             System.out.println(Arrays.toString(auxiliar));
+        int limpio[] =new int[tamanyo];
+        int pos = 0;
+        for (int i = 0; i < auxiliar.length;i++){
+            if (auxiliar[i]!=0){
+                limpio[pos]=auxiliar[i];
+                pos++;
+            }
+        }System.out.println(Arrays.toString(limpio));
+    }
+
+    public void duplicados3() {
+
+        int original[] = {3, 3, 5, 10, 16, 25, 25};
+        Random aleatorio = new Random();
+        System.out.println(Arrays.toString(original));
+        boolean repetir = true;
+        while (repetir){
+            repetir = false;
+            for (int i = 0; i < original.length; i++) {
+                if (i != original.length - 1 && original[i] == original[i+1]) {
+                    System.out.println("duplicado: " + original[i]);
+                    original[i] = aleatorio.nextInt(2) + 1;
+                    repetir = true;
+                }
+            }
+            Arrays.sort(original);
+        }System.out.println(Arrays.toString(original));
+    }
+
+    public void duplicadoscortos(){
+
+        int original[]= {3,3,5,10,16,25,25};
+        System.out.println(Arrays.toString(original));
+        int limpio []= Arrays.stream(original).distinct().toArray();
+        System.out.println(Arrays.toString(limpio));
+
     }
 
     }
