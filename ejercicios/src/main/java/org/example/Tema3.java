@@ -16,8 +16,9 @@ public class Tema3 {
         vector = new int[7];//se crea el vector, en este caso un int, se puede hacer con string
         vector [2] = 13;//se le da el valor al vector posicion 2
         vector [5] = vector [2] + 13;//se le da el valor al vector posicion 5
-        System.out.println(vector[5]);//imprime
-        for (int i=0; i<vector.length;i++){//se tiene que poner siempre inferior a i, si se pone igual, da error de programación, length es para el tamaño del vector
+        System.out.println(vector[5]);//imprime 26
+        for (int i=0; i<vector.length;i++){/*se tiene que poner siempre inferior a i, si se pone igual, da error de programación,
+        length es para el tamaño del vector*/
             System.out.println(" " + vector[i] + " ");
         }
     }
@@ -302,7 +303,30 @@ public class Tema3 {
 
     }
 
+    public void triangulo(){
+
+        Scanner teclado = new Scanner(System.in);
+        int altura = teclado.nextInt();
+        for (int i=0;i<=altura;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println("");
     }
+    }
+
+    public void multiplicacion(){
+
+        for (int i=1;i<=10;i++){
+            System.out.println("tabla del " + i + ":");
+            for (int j=1;j<=10;j++){
+                System.out.print(i+ "x" +j + "=" +i*j +" ");
+            }
+            System.out.println("");
+        }
+    }
+    }
+
 
 
 
