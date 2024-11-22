@@ -408,6 +408,24 @@ public class Tema3 {
 
     }//dibujar una matriz en linea
 
+//    public void mayor(){
+//
+//        Scanner teclado =new Scanner(System.in);
+//        Random aleatorio = new Random();
+//        System.out.println("introduce el tamaño de la matriz A");
+//        int filasa = teclado.nextInt();
+//        int columnaa =teclado.nextInt();
+//        System.out.println("introduce el tamaño de la matriz B");
+//        int filasb = teclado.nextInt();
+//        int columnab =teclado.nextInt();
+//        int a[][] = new int[filasa][columnaa];
+//        int b[][] = new int[filasb][columnab];
+//        for (int i=0; i<a.length;i++){
+//            for (int j=0; i<b.length;i++){
+//        }
+//
+//    }
+//    }
 
 }
 

@@ -5,7 +5,7 @@ public class Main {
 
 
         Tema3 ejercicios=new Tema3();
-        ejercicios.matrices5();
+        ejercicios.matrices();
         //Tema2 string = new Tema2();
         //string.excepciones();
         //Aleatorios aleatorios = new Aleatorios();
