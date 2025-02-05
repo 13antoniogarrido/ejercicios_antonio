@@ -1,11 +1,71 @@
 @startuml
-'https://plantuml.com/sequence-diagram
 
-autonumber
+package org.example.casa {
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+    class Casa {
+        - String direccion
+        - ArrayList<Habitacion> habitaciones
+        - Propietario propietario
+        + Casa(String direccion)
+        + setPropietario()
+        + agregarHabitacion(String nombre, int metrosCuadrados)
+        + existeHabitacion(String nombre): boolean
+        + borrarHabitacion(String nombre)
+        + mostrarHabitaciones()
+        + getHabitacionMasGrande(): Habitacion
+        + calcularHabitacionMasConsumo()
+        + getPropietario(): Propietario
+        + getHabitaciones(): ArrayList<Habitacion>
+        + setHabitaciones(ArrayList<Habitacion> habitaciones)
+    }
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+    class Habitacion {
+        - String nombre
+        - int metrosCuadrados
+        - ArrayList<Electrodomestico> listaElectrodomesticos
+        + Habitacion(String nombre, int metrosCuadrados)
+        + getNombre(): String
+        + getMetrosCuadrados(): int
+        + setMetrosCuadrados(int metrosCuadrados)
+        + getListaElectrodomesticos(): ArrayList<Electrodomestico>
+        + setListaElectrodomesticos(ArrayList<Electrodomestico> listaElectrodomesticos)
+        + agregarElectrodomestico(String nombre, double consumo)
+        + existeElectrodomestico(String nombre): boolean
+        + mostrarElectrodomesticos()
+        + calcularConsumoHabitacion(): double
+    }
+
+    class Electrodomestico {
+        - String nombre
+        - double consumo
+        + Electrodomestico(String nombre, double consumo)
+        + getConsumo(): double
+        + setConsumo(double consumo)
+        + getNombre(): String
+        + setNombre(String nombre)
+        + toString(): String
+    }
+
+    class Propietario {
+        - String nombre
+        - int edad
+        + Propietario(String nombre, int edad)
+        + getNombre(): String
+        + setNombre(String nombre)
+        + getEdad(): int
+        + setEdad(int edad)
+        + toString(): String
+    }
+
+    class Main {
+        + main(String[] args)
+    }
+
+}
+
+Casa *-- "1" Habitacion : tiene >
+Habitacion *-- "0" Electrodomestico : contiene >
+Casa *-- Propietario : tiene >
+Main *-- Casa : interactúa con >
+
 @enduml
