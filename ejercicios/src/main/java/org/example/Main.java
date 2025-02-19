@@ -1,11 +1,11 @@
-package org.example;
+//package org.example;
 
-public class Main {
-    public static void main(String[] args) {
-
-
-        Tema3 ejercicios=new Tema3();
-        ejercicios.matrices();
+//public class Main {
+//    public static void main(String[] args) {
+//
+//
+//        Tema3 ejercicios=new Tema3();
+//        ejercicios.matrices();
         //Tema2 string = new Tema2();
         //string.excepciones();
         //Aleatorios aleatorios = new Aleatorios();
@@ -20,5 +20,5 @@ public class Main {
         //actividad.actividad1();
         //Tema1 temario = new Tema1();
         //temario.logicos();//aritmeticos  asignacion  relacionales  logicos
-    }
-}
+  //  }
+//}
